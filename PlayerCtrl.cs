@@ -51,6 +51,17 @@ public class PlayerCtrl : MonoBehaviour
             }
             ++i;
         }
+
+        // jalan kanan cara lain (not working)
+        /*
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved) {
+            // Get movement of the finger since last frame
+            Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
+
+            // Move object across XY plane
+            transform.Translate(-touchDeltaPosition.x * moveSpeed, -touchDeltaPosition.y * moveSpeed, 0);
+        }
+        */
     }
 
     // fungsi berhenti pada animator
